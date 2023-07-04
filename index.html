@@ -51,7 +51,25 @@
 
     main {
       padding: 20px;
-      text-align: center;
+      display: flex; /* 使用 Flexbox 布局 */
+      align-items: flex-start; /* 上下对齐方式 */
+/*       text-align: center; */
+    }
+
+    section {
+      padding: 20px;
+      flex: 1; /* 充满剩余空间 */
+    }
+
+    .sidebar {
+      width: 200px;
+      margin-left: 20px;
+    }
+
+    .profile-img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 20px;
     }
 
     footer {
@@ -59,6 +77,24 @@
       color: #fff;
       padding: 10px;
       text-align: center;
+    }
+
+    /* 自定义链接样式 */
+    .links {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 20px;
+    }
+
+    .links a {
+      display: inline-block;
+      margin-bottom: 10px;
+      padding: 10px 20px;
+      background-color: #333;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
     }
   </style>
 </head>
@@ -69,9 +105,10 @@
 
   <nav>
     <ul>
-      <li><a href="#">About me</a></li>
+      <li><a href="#biography">Biographye</a></li>
+      <li><a href="#publications">Publications</a></li>
       <li><a href="#projects">Projects</a></li>
-      <li><a href="#">Publication</a></li>
+      <li><a href="#ee">Education/Experiences</a></li>
       <li><a href="https://www.notion.so/Awesome-Space-735bbf7b6d7a4a94867f9cdf6eb2576b?pvs=4">Awesome Space</a></li>
     </ul>
   </nav>
@@ -82,17 +119,32 @@
       <a href="https://github.com/guanrutan">GitHub</a>
       <a href="https://scholar.google.com/citations?user=6KgPlg4AAAAJ&hl=en">Google Scholar</a>
     </div>
-    <ul>
-      <li>  </li>
-    </ul> 
   </main>
 
+  <aside class="sidebar">
+    <img class="profile-img" src="your-photo.jpg" alt="你的照片">
+    <p>这里是你的基本信息介绍。</p>
+  </aside>
+
+  <section id="biography">
+    <h2>Biography</h2>
+    <!-- 在这里添加你的项目内容 -->
+  </section>
+
+  <section id="publications">
+    <h2>Publications</h2>
+    <!-- 在这里添加你的项目内容 -->
+  </section>
+  
   <section id="projects">
     <h2>Projects</h2>
     <!-- 在这里添加你的项目内容 -->
   </section>
-    </ul>
-  </nav>
+
+  <section id="ee">
+    <h2>Education/Experiences</h2>
+    <!-- 在这里添加你的项目内容 -->
+  </section>  
 
   <footer>
     &copy; 2023 My personal website All rights reserved.
