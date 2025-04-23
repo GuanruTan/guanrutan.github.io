@@ -28,7 +28,7 @@ author:
   bio              : "Angels all over that watch over you."
   location         : "Changsha"
   employer         : "Hunan University"
-  uri              : "https://guanrutan.github.io/"# URL
+  uri              : # URL
   email            : "guanrutan@hnu.edu.cn" 
 
   # Academic websites
