@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default"
-title                    : "Guanru Tan / James"
+title                    : "Guanru Tan / 谭冠儒"
 title_separator          : "-"
 name                     : &name "Guanru Tan"
 description              : &description "personal description"
